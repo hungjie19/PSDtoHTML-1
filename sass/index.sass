@@ -10,25 +10,26 @@ body
 	border-top-width: 3px
 	border-top-color: #99b92a
 	color: #9f9f9f
-	font-size: xx-small
+	font-size: 14px
 	line-height: 28px
 	overflow: auto
-.topbar-left
+
+.topbar_left
 	float: left	
+	select
+		margin-right: 48px
+		margin-top: 5px
+		float: left
+	option
+		color: $hot_color
 	p
 		float: left
 		margin-right: 5px
 		span
-				color: $hot-color
-				margin-left: 5px
-	ul
-		margin-right: 48px
-		float: left
-		overflow: hidden
-		height: 28px
-		li
-			color: $hot_color
-.topbar-right
+			color: $hot-color
+			margin-left: 5px
+
+.topbar_right
 	float: right
 	li
 		float: right
@@ -37,7 +38,7 @@ body
 		a
 			color: #9f9f9f
 			margin-left: 10px
-			:hover
+			&:hover
 				color: $hot_color
 header
 	h1 a
