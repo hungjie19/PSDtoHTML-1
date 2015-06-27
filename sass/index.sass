@@ -31,16 +31,101 @@ body
 
 .topbar_right
 	float: right
+	
 	li
 		float: right
-		span
-  			margin-left: 10px
+		
+	span
+		margin-left: 10px
+	a
+		color: #9f9f9f
+		margin-left: 10px
+		&:hover
+			color: $hot_color
+header
+	margin-bottom: 60px
+	h1 
+		float: left
+		margin-top: 40px
+		margin-bottom: 40px
+		overflow: auto
 		a
-			color: #9f9f9f
-			margin-left: 10px
+			display: block
+			font-size: 0
+			+bg('logo.png')
+.logo
+	overflow: auto
+.share
+	float: right
+	margin-top: 46px
+	li
+		float: right
+		a
+			display: block
+			margin-left: 5px
+
+	input
+		float: right
+		padding: 10px
+		font-size: 16px	
+
+.icon_1
+	+bg('icon-1.png')
+
+.icon_2
+	+bg('icon-2.png')
+
+.icon_3
+	+bg('icon-3.png')
+
+.icon_4
+	+bg('icon-4.png')
+
+.icon_5
+	+bg('icon-5.png')
+
+.icon_6
+	+bg('icon-6.png')
+
+.navbar
+	border-top-width: 8px
+	border-bottom-width: 8px
+	-webkit-border-image: url(../images/border_img.png) repeat 8
+	-o-border-image: url(../images/border_img.png) repeat 8
+	border-image: url(../images/border_img.png) repeat 8
+	overflow: auto
+	nav	
+		float: left
+		line-height: 70px
+		a
+			margin-right: 38px
 			&:hover
 				color: $hot_color
-header
-	h1 a
-		display: block
-		+bg('logo.png')
+	button
+		float: right
+		color: #FFF
+		padding: 18px 12px 18px 46px
+		margin-top: 10px
+		background: url(../images/shopping-cart.png) 11px 13px no-repeat  $hot_color
+		border-radius: 7px
+.slide
+	+bg('silde.png')
+
+.information
+	padding: 20px
+	font-size: 34px
+	font-weight: lighter
+	background: #FFF
+	overflow: auto
+	line-height: 52px
+	span
+		font-weight: bold
+		margin-left: 5px
+		margin-right: 5px
+	button
+		float: right
+		font-size: 16px
+		padding: 18px
+		color: #FFF
+		background: $hot_color
+		border-radius: 7px
