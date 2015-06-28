@@ -365,10 +365,13 @@ header h1 a {
 
 .information {
   padding: 20px;
-  font-size: 34px;
-  font-weight: lighter;
   background: #FFF;
   overflow: auto;
+}
+.information h2 {
+  float: left;
+  font-size: 34px;
+  font-weight: lighter;
   line-height: 52px;
 }
 .information span {
@@ -383,6 +386,31 @@ header h1 a {
   color: #FFF;
   background: #99b92a;
   border-radius: 7px;
+}
+
+.products_bar {
+  overflow: auto;
+  margin-top: 65px;
+  line-height: 28px;
+}
+.products_bar h2 {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+.products_bar span {
+  background: url(../images/border_img.png) repeat;
+  float: left;
+  width: 76%;
+  height: 8px;
+  margin: 10px 0;
+}
+.products_bar button {
+  float: right;
+  background: #99b92a;
+  border-radius: 7px;
+  color: #FFF;
+  padding: 4px;
 }
 
 /*# sourceMappingURL=all.css.map */
