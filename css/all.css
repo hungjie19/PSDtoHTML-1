@@ -538,4 +538,58 @@ header h1 a {
   display: block;
 }
 
+.brand_bar {
+  overflow: auto;
+  line-height: 28px;
+  margin-top: 65px;
+  margin-bottom: 25px;
+}
+.brand_bar h2 {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+.brand_bar span {
+  background: url(../images/border_img.png) repeat;
+  float: left;
+  width: 79%;
+  height: 8px;
+  margin: 10px 0;
+}
+
+.brands {
+  overflow: auto;
+  margin-bottom: 60px;
+}
+.brands li {
+  float: left;
+  background: #FFF;
+  border: 1px #e7e7e7 solid;
+}
+.brands a {
+  display: block;
+  width: 234px;
+  height: 130px;
+}
+
+.brandImg_1 {
+  background: url(../images/brand-1.png) 50% 50% no-repeat;
+}
+
+.brandImg_2 {
+  background: url(../images/brand-2.png) 50% 50% no-repeat;
+}
+
+.brandImg_3 {
+  background: url(../images/brand-3.png) 50% 50% no-repeat;
+}
+
+.brandImg_4 {
+  background: url(../images/brand-4.png) 50% 50% no-repeat;
+}
+
+.brandImg_5 {
+  background: url(../images/brand-5.png) 50% 50% no-repeat;
+}
+
 /*# sourceMappingURL=all.css.map */
