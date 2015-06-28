@@ -732,4 +732,33 @@ footer h3 {
   border-radius: 50%;
 }
 
+.bottombar {
+  background-color: #000;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #99b92a;
+  color: #9f9f9f;
+  font-size: 14px;
+  line-height: 28px;
+  overflow: auto;
+}
+
+.bottombar-left {
+  float: left;
+}
+.bottombar-left a {
+  margin: 10px 15px 10px 0;
+  color: #858585;
+  font-size: 6px;
+}
+.bottombar-left a:hover {
+  color: #99b92a;
+}
+
+.bottombar-right {
+  float: right;
+  color: #858585;
+  font-size: 6px;
+}
+
 /*# sourceMappingURL=all.css.map */
