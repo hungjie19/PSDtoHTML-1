@@ -171,18 +171,6 @@ header
 	display: block
 	margin: 5px 1px 0 1px
 
-.product_img_1
-	+bg('product-1.png')
-
-.product_img_2
-	+bg('product-2.png')
-
-.product_img_3
-	+bg('product-3.png')
-
-.product_img_4
-	+bg('product-4.png')
-
 .sale
 	background: url(../images/sale.png) no-repeat
 
@@ -217,20 +205,8 @@ header
 		margin-left: 5px
 		color: #7e7e7e
 
-.product_img_5
-	+bg('product-5.png')
-
-.product_img_6
-	+bg('product-6.png')
-
-.product_img_7
-	+bg('product-7.png')
-
-.product_img_8
-	+bg('product-8.png')
-
 .FEATUREDimg
-	display: block
+	display: border-left
 
 .brands
 	overflow: auto
@@ -240,24 +216,13 @@ header
 		background: #FFF
 		border: 1px #e7e7e7 solid
 	a
-		display: block
 		width: 234px
 		height: 130px
-
-.brandImg_1
-	background: url(../images/brand-1.png) 50% 50% no-repeat
-
-.brandImg_2
-	background: url(../images/brand-2.png) 50% 50% no-repeat
-
-.brandImg_3
-	background: url(../images/brand-3.png) 50% 50% no-repeat
-
-.brandImg_4
-	background: url(../images/brand-4.png) 50% 50% no-repeat
-
-.brandImg_5
-	background: url(../images/brand-5.png) 50% 50% no-repeat
+		text-align: center
+		line-height: 130px
+		display: block
+	img
+		vertical-align: middle	
 
 footer
 	background: #FFF
@@ -276,11 +241,11 @@ footer
 		display: block
 	h3
 		margin-bottom: 15px
-	nav 
+	ul 
 		margin-bottom: 120px
-		a
-			float: left
-			margin-right: 5px		
+	li	
+		float: left
+		margin-right: 5px			
 		
 .fooLogo
 	width: 240px
@@ -293,14 +258,14 @@ footer
 	h3
 		margin-bottom: 24px
 	h4
-		font-size: 16px	
-	div
+		font-size: 15px	
+	li
 		border:	1px #e7e7e7 solid
 		border-radius: 9px
-		padding: 15px 12px 15px 84px
+		padding: 15px 10px 15px 85px
 		margin-bottom: 16px
 		p
-			font-size: 14px
+			font-size: 13px
 			line-height: 24px
 		span
 			color: $hot-color
@@ -316,56 +281,51 @@ footer
 	margin-right: 50px
 	h3
 		margin-bottom: 24px
-	ul
-		margin-bottom: 23px
 	li
 		font-size: 14px
-		ul
-			margin-bottom: 20px		
-			li
-				margin-bottom: 10px
+		margin-bottom: 10px
+.contactsMargin
+	margin-bottom: 32px
+			
 .peopleSay
-
+	width: 330px
+	
 	h3
 		margin-bottom: 24px
-	ul
-		margin-bottom: 22px
-		width: 330px
-		height: 100px
 	li
-		float: left 
-	a
-		display: block	
-		margin-bottom: 7px
-	span 
-		font-size: 14px
-		font-weight: 900
-
-.icon_block
-	text-align: center
-	margin-right: 15px
-
-.sayInfo
-	background: url(../images/dotdot.png) 95% 90% no-repeat #f6f4f5
-	width: 170px
-	height: 70px
-	padding: 10px 50px 10px 10px
-	border:	1px #e7e7e7 solid
-	border-radius: 9px
-	font-size: 12px
-	line-height: 18px
-
+		margin-bottom: 22px
+		overflow: auto
+	div
+		float: left
+		width: 74px
+		margin-right: 10px
+		text-align: center
+		a
+			display: block	
+			margin-bottom: 7px
+			width: 74px
+			height: 74px
+			border-radius: 50%
+		span 
+			font-size: 14px
+			font-weight: 900
+	p
+		float: left
+		background: url(../images/dotdot.png) 95% 90% no-repeat #f6f4f5
+		width: 165px
+		height: 70px
+		padding: 10px 50px 10px 10px
+		border:	1px #e7e7e7 solid
+		border-radius: 9px
+		font-size: 12px
+		line-height: 18px
+		
 .people_1
 	background: url(../images/people-1.png) 50% 50% no-repeat #e1e1e1
-	width: 74px
-	height: 74px
-	border-radius: 50%
-
+	
 .people_2
-	background: url(../images/people-2.png) 50% 50% no-repeat #e1e1e1
-	width: 74px
-	height: 74px
-	border-radius: 50%	
+	background: url(../images/people-2.png) 50% 50% no-repeat #e1e1e1	
+
 
 .bottombar
 	background-color: #000
@@ -379,10 +339,12 @@ footer
 
 .bottombar-left	
 	float: left
+	li
+		float: left
 	a
 		margin: 10px 15px 10px 0
 		color: #858585
-		font-size: 6px
+		font-size: 8px
 		&:hover
 			color: $hot-color
 

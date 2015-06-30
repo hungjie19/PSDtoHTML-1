@@ -440,30 +440,6 @@ header h1 a {
   margin: 5px 1px 0 1px;
 }
 
-.product_img_1 {
-  background: url("../images/product-1.png");
-  width: 278px;
-  height: 172px;
-}
-
-.product_img_2 {
-  background: url("../images/product-2.png");
-  width: 278px;
-  height: 172px;
-}
-
-.product_img_3 {
-  background: url("../images/product-3.png");
-  width: 278px;
-  height: 172px;
-}
-
-.product_img_4 {
-  background: url("../images/product-4.png");
-  width: 278px;
-  height: 172px;
-}
-
 .sale {
   background: url(../images/sale.png) no-repeat;
 }
@@ -507,32 +483,8 @@ header h1 a {
   color: #7e7e7e;
 }
 
-.product_img_5 {
-  background: url("../images/product-5.png");
-  width: 280px;
-  height: 180px;
-}
-
-.product_img_6 {
-  background: url("../images/product-6.png");
-  width: 280px;
-  height: 180px;
-}
-
-.product_img_7 {
-  background: url("../images/product-7.png");
-  width: 280px;
-  height: 180px;
-}
-
-.product_img_8 {
-  background: url("../images/product-8.png");
-  width: 280px;
-  height: 180px;
-}
-
 .FEATUREDimg {
-  display: block;
+  display: border-left;
 }
 
 .brands {
@@ -545,29 +497,14 @@ header h1 a {
   border: 1px #e7e7e7 solid;
 }
 .brands a {
-  display: block;
   width: 234px;
   height: 130px;
+  text-align: center;
+  line-height: 130px;
+  display: block;
 }
-
-.brandImg_1 {
-  background: url(../images/brand-1.png) 50% 50% no-repeat;
-}
-
-.brandImg_2 {
-  background: url(../images/brand-2.png) 50% 50% no-repeat;
-}
-
-.brandImg_3 {
-  background: url(../images/brand-3.png) 50% 50% no-repeat;
-}
-
-.brandImg_4 {
-  background: url(../images/brand-4.png) 50% 50% no-repeat;
-}
-
-.brandImg_5 {
-  background: url(../images/brand-5.png) 50% 50% no-repeat;
+.brands img {
+  vertical-align: middle;
 }
 
 footer {
@@ -595,10 +532,10 @@ footer h3 {
 .followUs h3 {
   margin-bottom: 15px;
 }
-.followUs nav {
+.followUs ul {
   margin-bottom: 120px;
 }
-.followUs nav a {
+.followUs li {
   float: left;
   margin-right: 5px;
 }
@@ -617,19 +554,19 @@ footer h3 {
   margin-bottom: 24px;
 }
 .recentPosts h4 {
-  font-size: 16px;
+  font-size: 15px;
 }
-.recentPosts div {
+.recentPosts li {
   border: 1px #e7e7e7 solid;
   border-radius: 9px;
-  padding: 15px 12px 15px 84px;
+  padding: 15px 10px 15px 85px;
   margin-bottom: 16px;
 }
-.recentPosts div p {
-  font-size: 14px;
+.recentPosts li p {
+  font-size: 13px;
   line-height: 24px;
 }
-.recentPosts div span {
+.recentPosts li span {
   color: #99b92a;
   margin-left: 5px;
 }
@@ -648,47 +585,46 @@ footer h3 {
 .contacts h3 {
   margin-bottom: 24px;
 }
-.contacts ul {
-  margin-bottom: 23px;
-}
 .contacts li {
   font-size: 14px;
-}
-.contacts li ul {
-  margin-bottom: 20px;
-}
-.contacts li ul li {
   margin-bottom: 10px;
 }
 
+.contactsMargin {
+  margin-bottom: 32px;
+}
+
+.peopleSay {
+  width: 330px;
+}
 .peopleSay h3 {
   margin-bottom: 24px;
 }
-.peopleSay ul {
-  margin-bottom: 22px;
-  width: 330px;
-  height: 100px;
-}
 .peopleSay li {
-  float: left;
+  margin-bottom: 22px;
+  overflow: auto;
 }
-.peopleSay a {
+.peopleSay div {
+  float: left;
+  width: 74px;
+  margin-right: 10px;
+  text-align: center;
+}
+.peopleSay div a {
   display: block;
   margin-bottom: 7px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
 }
-.peopleSay span {
+.peopleSay div span {
   font-size: 14px;
   font-weight: 900;
 }
-
-.icon_block {
-  text-align: center;
-  margin-right: 15px;
-}
-
-.sayInfo {
+.peopleSay p {
+  float: left;
   background: url(../images/dotdot.png) 95% 90% no-repeat #f6f4f5;
-  width: 170px;
+  width: 165px;
   height: 70px;
   padding: 10px 50px 10px 10px;
   border: 1px #e7e7e7 solid;
@@ -699,16 +635,10 @@ footer h3 {
 
 .people_1 {
   background: url(../images/people-1.png) 50% 50% no-repeat #e1e1e1;
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
 }
 
 .people_2 {
   background: url(../images/people-2.png) 50% 50% no-repeat #e1e1e1;
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
 }
 
 .bottombar {
@@ -725,10 +655,13 @@ footer h3 {
 .bottombar-left {
   float: left;
 }
+.bottombar-left li {
+  float: left;
+}
 .bottombar-left a {
   margin: 10px 15px 10px 0;
   color: #858585;
-  font-size: 6px;
+  font-size: 8px;
 }
 .bottombar-left a:hover {
   color: #99b92a;
