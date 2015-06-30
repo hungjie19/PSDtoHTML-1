@@ -342,10 +342,14 @@ header h1 a {
   float: left;
   line-height: 70px;
 }
-.navbar nav a {
+.navbar nav li {
+  float: left;
   margin-right: 38px;
 }
-.navbar nav a:hover {
+.navbar nav li a {
+  color: #000;
+}
+.navbar nav li a:hover {
   color: #99b92a;
 }
 .navbar button {
@@ -393,18 +397,12 @@ header h1 a {
   line-height: 28px;
   margin-top: 65px;
   margin-bottom: 25px;
+  background: url(../images/border_img.png) repeat-x center;
 }
 .products_bar h2 {
   float: left;
   font-size: 24px;
   font-weight: bold;
-}
-.products_bar span {
-  background: url(../images/border_img.png) repeat;
-  float: left;
-  width: 72%;
-  height: 8px;
-  margin: 10px 0;
 }
 .products_bar button {
   float: right;
@@ -437,7 +435,7 @@ header h1 a {
   height: 424px;
 }
 
-.recentProducys {
+.recentImg {
   display: block;
   margin: 5px 1px 0 1px;
 }
@@ -467,8 +465,7 @@ header h1 a {
 }
 
 .sale {
-  margin-top: 10px;
-  margin-left: 13px;
+  background: url(../images/sale.png) no-repeat;
 }
 
 .saleInfo {
@@ -536,25 +533,6 @@ header h1 a {
 
 .FEATUREDimg {
   display: block;
-}
-
-.brand_bar {
-  overflow: auto;
-  line-height: 28px;
-  margin-top: 65px;
-  margin-bottom: 25px;
-}
-.brand_bar h2 {
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-}
-.brand_bar span {
-  background: url(../images/border_img.png) repeat;
-  float: left;
-  width: 78%;
-  height: 8px;
-  margin: 10px 0;
 }
 
 .brands {

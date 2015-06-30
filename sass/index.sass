@@ -97,10 +97,13 @@ header
 	nav	
 		float: left
 		line-height: 70px
-		a
+		li
+			float: left
 			margin-right: 38px
-			&:hover
-				color: $hot_color
+			a
+				color: #000
+				&:hover
+					color: $hot_color
 	button
 		float: right
 		color: #FFF
@@ -137,22 +140,18 @@ header
 	line-height: 28px
 	margin-top: 65px
 	margin-bottom: 25px
+	background: url(../images/border_img.png) repeat-x center
 	h2
 		float: left
 		font-size: 24px
 		font-weight: bold
-	span
-		background: url(../images/border_img.png) repeat
-		float: left
-		width: 72%
-		height: 8px
-		margin: 10px 0
 	button
 		float: right	
 		background: $hot_color
 		border-radius: 7px
 		color: #FFF
 		padding: 4px
+
 .products
 	overflow: auto
 	li
@@ -168,7 +167,7 @@ header
 .product_BG
 	+bg('products_BG.png')
 
-.recentProducys		
+.recentImg	
 	display: block
 	margin: 5px 1px 0 1px
 
@@ -185,9 +184,7 @@ header
 	+bg('product-4.png')
 
 .sale
-	margin-top: 10px
-	margin-left: 13px
-	
+	background: url(../images/sale.png) no-repeat
 
 .saleInfo
 	margin: 10px 17px 10px 15px
@@ -235,21 +232,6 @@ header
 .FEATUREDimg
 	display: block
 
-.brand_bar
-	overflow: auto
-	line-height: 28px
-	margin-top: 65px
-	margin-bottom: 25px
-	h2
-		float: left
-		font-size: 24px
-		font-weight: bold
-	span
-		background: url(../images/border_img.png) repeat
-		float: left
-		width: 78%
-		height: 8px
-		margin: 10px 0
 .brands
 	overflow: auto
 	margin-bottom: 60px	
