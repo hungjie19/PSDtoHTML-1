@@ -206,6 +206,16 @@ body {
 .wrap {
   width: 1182px;
   margin: 0 auto;
+  zoom: 1;
+}
+.wrap:before {
+  content: "";
+  display: table;
+}
+.wrap:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .topbar {
@@ -602,7 +612,16 @@ footer h3 {
 }
 .peopleSay li {
   margin-bottom: 22px;
-  overflow: auto;
+  zoom: 1;
+}
+.peopleSay li:before {
+  content: "";
+  display: table;
+}
+.peopleSay li:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .peopleSay div {
   float: left;

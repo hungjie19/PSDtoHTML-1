@@ -3,6 +3,14 @@ body
 .wrap
 	width: $width
 	margin: 0 auto
+	&:before
+		content: ""
+		display: table
+	&:after 
+		content: ""
+		display: table
+		clear: both
+	zoom: 1
 
 .topbar
 	background-color: #fff
@@ -294,7 +302,14 @@ footer
 		margin-bottom: 24px
 	li
 		margin-bottom: 22px
-		overflow: auto
+		&:before
+			content: ""
+			display: table
+		&:after 
+			content: ""
+			display: table
+			clear: both
+		zoom: 1
 	div
 		float: left
 		width: 74px
