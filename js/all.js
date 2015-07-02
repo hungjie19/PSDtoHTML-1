@@ -8,9 +8,9 @@ $(document).ready(function() {
 			infiniteSlider: true,
 			snapSlideCenter: true,
 			onSlideChange: slideChange,
-			autoSlideTransTimer: '1250',
-			autoSlide: false,
-			autoSlideTimer: '7000',
+			autoSlideTransTimer: 1500,
+			autoSlide: true,
+			autoSlideTimer: 5000,
 			stageCSS: {
 				overflow: 'visible'
 			},
@@ -21,6 +21,5 @@ $(document).ready(function() {
 	});
 	
 	function slideChange(args) {
-		$('.item').removeClass('selected');
-		$('.item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
+		
 	}

@@ -699,6 +699,7 @@ footer h3 {
   overflow: hidden;
   width: 1180px;
   height: 420px;
+  margin: 0 auto;
 }
 
 .iosslider .slider {
@@ -713,22 +714,25 @@ footer h3 {
 }
 
 .prevButton {
-  left: 50px;
-  background: url(../images/btn_slideShow.png) no-repeat 0px 0px;
+  left: 400px;
+  background: url(../images/btn_slideShow.png) no-repeat 0px 2px;
 }
 
 .nextButton {
-  right: 50px;
-  background: url(../images/btn_slideShow.png) no-repeat -82px 0px;
+  right: 400px;
+  background: url(../images/btn_slideShow.png) no-repeat -82px 2px;
 }
 
 .btn_Slide {
   position: absolute;
-  top: 460px;
+  top: 480px;
   width: 84px;
   height: 84px;
   border-radius: 90px;
   z-index: 99;
+}
+.btn_Slide:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*# sourceMappingURL=all.css.map */
