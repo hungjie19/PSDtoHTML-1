@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/all.css">
 	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
 	<script type="text/javascript" src="js/jquery.iosslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
 	<script type="text/javascript" src="js/all.js"></script>
 </head>
 <body>
@@ -107,12 +108,13 @@
 		</h2>
 		<button>visit the store</button>
 	</div>
+	<!--RECENT PRODUCTS-->
 	<div class="products_bar">
 		<h2>RECENT PRODUCTS</h2>
-		<button>→</button>
-		<button>←</button>
+		<button onclick="recentSlide.goToNextSlide();">→</button>
+		<button onclick="recentSlide.goToPrevSlide();">←</button>
 	</div>
-	<div class="products">
+	<div id="recentSlider" class="products">
 		<ul>
 			<li class="product_BG Interval">
 				<img class="recentImg sale" src="images/product-1.png" alt="product">
@@ -172,12 +174,13 @@
 			</li>
 		</ul>
 	</div>
+	<!--FEATURED PRODUCTS-->
 	<div class="products_bar">
 		<h2>FEATURED PRODUCTS</h2>
-		<button>→</button>
-		<button>←</button>
+		<button onclick="featuedSlide.goToNextSlide();">→</button>
+		<button onclick="featuedSlide.goToPrevSlide();">←</button>
 	</div>
-	<div class="products">
+	<div id="featuedSlider" class="products">
 		<ul>
 			<li class="product_BG Interval">
 				<img src="images/product-5.png" alt="product">
@@ -262,6 +265,7 @@
 	</div>
 </div>
 <footer>
+	<div class="btn_gotoTop"></div>
 	<div class="wrap">
 		<ul class="fooUl">
 			<li class="fooBlock followUs">
