@@ -178,7 +178,10 @@ header
 	margin: 5px 1px 0 1px
 
 .sale
-	background: url(../images/sale.png) no-repeat
+	+bg('sale.png')
+	float: left
+	position: relative
+	margin-top: -240px
 
 .saleInfo
 	margin: 10px 17px 10px 15px
@@ -192,6 +195,13 @@ header
 		font-size: 12px
 		padding: 8px
 		border-radius: 7px
+		&:before
+			content: ""
+			display: table
+		&:after 
+			content: ""
+			display: table
+			clear: both
 
 .priceInfo
 	margin: 22px 35px 20px 15px
@@ -232,9 +242,9 @@ header
 
 .btn_gotoTop
 	background: url(../images/btn_gotoTop.png) 50% 50% no-repeat $hot-color
-	width: 50px
-	height: 50px
-	right: 150px
+	width: 40px
+	height: 40px
+	right: 2%
 	bottom: 50px
 	position: fixed
 	border-radius: 5px

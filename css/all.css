@@ -444,7 +444,12 @@ header h1 a {
 }
 
 .sale {
-  background: url(../images/sale.png) no-repeat;
+  background: url("../images/sale.png");
+  width: 55px;
+  height: 55px;
+  float: left;
+  position: relative;
+  margin-top: -240px;
 }
 
 .saleInfo {
@@ -461,6 +466,15 @@ header h1 a {
   font-size: 12px;
   padding: 8px;
   border-radius: 7px;
+}
+.saleInfo button:before {
+  content: "";
+  display: table;
+}
+.saleInfo button:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .priceInfo {
@@ -512,9 +526,9 @@ header h1 a {
 
 .btn_gotoTop {
   background: url(../images/btn_gotoTop.png) 50% 50% no-repeat #99b92a;
-  width: 50px;
-  height: 50px;
-  right: 150px;
+  width: 40px;
+  height: 40px;
+  right: 2%;
   bottom: 50px;
   position: fixed;
   border-radius: 5px;
@@ -725,12 +739,12 @@ footer h3 {
 }
 
 .prevButton {
-  left: 400px;
+  left: 50px;
   background: url(../images/btn_slideShow.png) no-repeat 0px 2px;
 }
 
 .nextButton {
-  right: 400px;
+  right: 50px;
   background: url(../images/btn_slideShow.png) no-repeat -82px 2px;
 }
 
