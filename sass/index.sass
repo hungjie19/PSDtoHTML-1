@@ -61,7 +61,7 @@ header
 			+bg('logo.png')
 .logo
 	overflow: auto
-.share
+.social
 	float: right
 	margin-top: 46px
 	li
@@ -69,14 +69,20 @@ header
 		a
 			display: block
 			margin-left: 5px
-
+.share
+	float: right
+	margin-top: 46px
 	input
 		float: right
 		padding: 10px
-		font-size: 16px	
-
-.icon_1
-	+bg('icon-1.png')
+		font-size: 16px
+		border-radius: 7px
+		border: #d0d0d0 1px solid	
+	button
+		+bg('icon-1.png')
+		float: right
+		border-radius: 7px
+		border: #d0d0d0 1px solid
 
 .icon_2
 	+bg('icon-2.png')
@@ -106,10 +112,14 @@ header
 		li
 			float: left
 			margin-right: 38px
+			&:nth-child(1)
+				a
+					color: $hot-color
 			a
 				color: #000
 				&:hover
 					color: $hot_color
+					
 	button
 		float: right
 		color: #FFF
@@ -117,6 +127,9 @@ header
 		margin-top: 10px
 		background: url(../images/shopping-cart.png) 11px 13px no-repeat  $hot_color
 		border-radius: 7px
+
+.hotColor
+	color: $hot-color !important 
 
 .information
 	padding: 20px
@@ -161,17 +174,16 @@ header
 .products
 	overflow: auto
 	li
+		+bg('products_BG.png')
 		float: left
+		margin-right: 20px
+		&:nth-child(4)
+			margin-right: 0px
+
 		hr
 			border: 1px #e7e7e7 solid
 	h3
-		font-size: 20px		
-
-.Interval
-	margin-right: 20px
-
-.product_BG
-	+bg('products_BG.png')
+		font-size: 20px
 
 .recentImg	
 	display: block
@@ -373,7 +385,7 @@ footer
 	line-height: 28px
 	overflow: auto
 
-.bottombar-left	
+.footer-linkGroup
 	float: left
 	li
 		float: left
@@ -384,7 +396,7 @@ footer
 		&:hover
 			color: $hot-color
 
-.bottombar-right
+.copyright
 	float: right
 	color: #858585
 	font-size: 6px
